@@ -196,8 +196,9 @@ const menu = [
   
   function getCheapestMenuItem(menu) {
     // Your code here
+    return 
   }
-  // console.log(getCheapestMenuItem(menu));
+ console.log(getCheapestMenuItem(menu));
   
   /**********
     Question 7: 🌶️🌶️🌶️
@@ -227,8 +228,10 @@ const menu = [
   
   function getMenuItemsByIngredient(menu, ingredient) {
     // Your code here
+    const getItem = menu.filter((item)=> item.ingredients.includes(ingredient) )
+    return getItem
   }
   
-  // console.log(getMenuItemsByIngredient(menu, "Parmesan"));
+  console.log(getMenuItemsByIngredient(menu, "Parmesan"));
 
   
