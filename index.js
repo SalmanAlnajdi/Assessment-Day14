@@ -151,8 +151,9 @@ const menu = [
   
   function countMainCourseItems(menu) {
     // Your code here
+    return menu.reduce((total, item)=> item.category == "Main Course"?total+=1:total,0)
   }
-  // console.log(countMainCourseItems(menu));
+  console.log(countMainCourseItems(menu));
   
   /**********
     Question 5: 🌶️
