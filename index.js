@@ -167,8 +167,16 @@ const menu = [
   
   function listMenuItemNamesByCategory(menu, category) {
     // Your code here
+    const itemName = []
+    menu.forEach(item => {
+        if(item.category == category){
+            itemName.push(item.name)
+        }
+        
+    });
+    return itemName
   }
-  // console.log(listMenuItemNamesByCategory(menu, "Main Course"));
+  console.log(listMenuItemNamesByCategory(menu, "Main Course"));
   
   /**********
   Question 6: 🌶️🌶️
