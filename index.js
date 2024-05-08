@@ -64,8 +64,10 @@ const menu = [
   
   function isMenuItemInCategory(menuItem, category) {
     // Your code here
+    return menuItem.category == category
+
   }
-  // console.log(isMenuItemInCategory(menu[1], "Salad"));
+  console.log(isMenuItemInCategory(menu[1], "Salad"));
   
   /**********
     Question 3:
