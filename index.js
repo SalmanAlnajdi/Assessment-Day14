@@ -196,7 +196,8 @@ const menu = [
   
   function getCheapestMenuItem(menu) {
     // Your code here
-    return 
+    return lowest = menu.reduce((lowest, p) => (p.price < lowest.price ? p : lowest));
+    
   }
  console.log(getCheapestMenuItem(menu));
   
